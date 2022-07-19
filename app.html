@@ -20,7 +20,7 @@
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html"><img src="/img/J.L 2.svg" height="40px" alt="none" class="d-inline-block border"> App Name</a>
+            <a class="navbar-brand" href="/index.html"><img src="/img/J.L 2.svg" height="40px" alt="none" class="d-inline-block border"> FizzBuzz</a>
             <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
@@ -55,9 +55,21 @@
     <!-- Main -->
     <main class="content">
         <div class="container mt-5">
-            <h1>APP UI GOES HERE</h1>
-            <input type="text" id="message" placeholder="Enter a Message">
-            <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+            <h1><span class="fizzTxt">Fizz</span><span class="buzzTxt">Buzz</span></h1>
+            <p class="resultsTxt">This app takes two numbers and prints the numbers from start to end. It will display fizz for multiples of 3 and buzz for multiples of 5 and fizzbuzz for multiples of both.</p>
+            <p class="resultsTxt">Enter two numbers and hit the display numbers button. If you like you can control the amount of numbers with the third box</p>
+            <input type="number" id="startValue" placeholder="Enter a Start Value" value = 3>
+            <input type="number" id="endValue" placeholder="Enter a End Value" value = 5>
+            <input type="number" id="control" placeholder="Enter a value: MAX 100">
+            <button id="btnSubmit" class="btn btn-primary">Display Number</button>
+            <h4 class="resultsTxt">Results</h4>
+            <hr>
+            <div class ="row row-cols-5" id="results">
+                <div>
+
+                </div>
+
+            </div>
         </div>
     </main>
     <!-- Footer -->
@@ -86,7 +98,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById("btnSubmit").addEventListener("click",getValue2);
+        document.getElementById("btnSubmit").addEventListener("click",getNumbers);
     </script>
 </body>
 </html>
