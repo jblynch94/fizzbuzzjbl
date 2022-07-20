@@ -1,10 +1,10 @@
 :root{
-    --jbl-primary-color:  rgb(66,148,186);
-    --jbl-secondary-color: rgb(255, 255, 255);
-    --jbl-dark-color:  rgb(27, 61, 77);
+    --jbl-primary-color:  rgba(243, 167, 18, 1);
+    --jbl-secondary-color:rgba(187, 68, 48, 1);
+    --jbl-dark-color:  rgba(35, 31, 32, 1);
     --jbl-light-color: #ffffff;
-    --jbl-highlight-color:  rgb(240, 142, 62);
-    --jbl-nav-toggler-glow: rgb(240, 142, 62);
+    --jbl-highlight-color:  rgba(187, 68, 48, 1) ;
+    --jbl-nav-toggler-glow: rgba(241, 247, 237, 1);
     }
 /* sticky footer setup */
 html,body{
@@ -14,7 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: var(--jbl-primary-color);
-    color: white;
+    color: var(--jbl-dark-color);
 }
 .content{
     flex: 1 0 auto;
@@ -25,10 +25,10 @@ body{
 /* navbar override */
 
 #mainNav{
-    background: var(--jbl-dark-color);
+    background: var(--jbl-secondary-color);
 }
 #mainNav button{
-    border-color: var(--jbl-secondary-color);
+    border-color: var(--jbl-primary-color);
 }
 .navbar-toggler-icon-jbl{
     color: var(--jbl-secondary-color);
@@ -37,7 +37,7 @@ body{
     color: var(--jbl-nav-toggler-glow) !important;
 }
 .nav-item>a:hover{
-    color: var(--jbl-highlight-color);
+    color: var(--jbl-primary-color);
 }
 .active{
     color: var(--jbl-highlight-color) !important;
@@ -162,4 +162,12 @@ u{
 .resultsTxt{
     color: rgba(10,10,10,.7);
     font-weight: bold;
+}
+
+.logo{
+    border: solid;
+    border-radius: 15px;
+    overflow: hidden;
+    display:flex;
+    
 }
