@@ -166,8 +166,6 @@ u{
 
 .logo{
     border: solid;
-    border-radius: 15px;
-    overflow: hidden;
-    display:flex;
-    
+   border-radius: 15px;
+   border-color: var(--jbl-primary-color);     
 }
