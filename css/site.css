@@ -40,7 +40,7 @@ body{
     color: var(--jbl-primary-color);
 }
 .active{
-    color: var(--jbl-highlight-color) !important;
+    color: var(--jbl-primary-color) !important;
 }
 /* navbar overrides end */
 
@@ -165,7 +165,11 @@ u{
 }
 
 .logo{
-    border: solid;
+   border: solid;
    border-radius: 15px;
    border-color: var(--jbl-primary-color);     
+}
+
+#brand{
+    background-color: var(--jbl-dark-color);
 }
